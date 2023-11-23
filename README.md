@@ -156,9 +156,9 @@ Please write your answers here
     6. exit() -> terminates the current process
     Library functions, on the other hand, are implemented in user space and typically reside in shared libraries. They are designed to provide a higher-level abstraction over system calls,      simplifying common programming tasks and reducing the need to directly interact with the kernel. Library functions often call system calls internally to perform their operations.
     Examples of library functions are :
-   1. printf() -> Formats and prints data to the console.
-   2. scanf() -> Reads formatted input from the console.
-   3. malloc() -> Allocates memory from the heap.
+      1. printf() -> Formats and prints data to the console.
+      2. scanf() -> Reads formatted input from the console.
+      3. malloc() -> Allocates memory from the heap.
 
 15. IN xv6, paging is used for memory management. XV6 uses 32 bit VA, so memory size of 4KB is maintained and a 2 level page table is used.Paging helps in non-contiguous memory allocation, by dividing memory into frames and programs into pages of equal sizes.
 
