@@ -144,4 +144,8 @@ Please write your answers here
     5. Path names: Path names are used to identify files and directories in the file system. Path names are strings that consist of a sequence of file and directory names separated by              slashes.
     6. File descriptor layer: The file descriptor layer is responsible for managing file descriptors which are used to access open files.
     7. Disks : The file system stores data on disk, and the disk driver is responsible for reading and writing data to and from disk.
-14. 
+       
+14. In the context of XV6, system calls and library functions are both mechanisms for requesting services from the operating system. However, they differ in their implementation and scope.
+    System calls are low-level functions that provide direct access to the kernel, the core of the operating system. When a user program makes a system call, it triggers a transfer of          control from user space to kernel space, granting the kernel privileged access to hardware resources and system-wide data structures. System calls are typically used for tasks such as       file I/O, process management, and communication with other devices.
+    Library functions, on the other hand, are implemented in user space and typically reside in shared libraries. They are designed to provide a higher-level abstraction over system calls,      simplifying common programming tasks and reducing the need to directly interact with the kernel. Library functions often call system calls internally to perform their operations.
+    Examples of the 
