@@ -121,7 +121,7 @@ Please write your answers here
 2. (b) Linux
 3. (d) simple
 4. (a) As function in the C standard library
-5. x
+5. (a) 128
 6. (c) sh
 7. (a) Round-robin scheduling
 8. (a) Paging
