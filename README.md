@@ -146,6 +146,37 @@ Please write your answers here
     7. Disks : The file system stores data on disk, and the disk driver is responsible for reading and writing data to and from disk.
        
 14. In the context of XV6, system calls and library functions are both mechanisms for requesting services from the operating system. However, they differ in their implementation and scope.
-    System calls are low-level functions that provide direct access to the kernel, the core of the operating system. When a user program makes a system call, it triggers a transfer of          control from user space to kernel space, granting the kernel privileged access to hardware resources and system-wide data structures. System calls are typically used for tasks such as       file I/O, process management, and communication with other devices.
+    System calls are low-level functions that provide direct access to the kernel, the core of the operating system. When a user program makes a system call, it triggers a transfer of           control from user space to kernel space, granting the kernel privileged access to hardware resources and system-wide data structures. System calls are typically used for tasks such as       file I/O, process management, and communication with other devices.
+    Examples of the system calls in XV6 are :
+    1. open() -> opens the file for reading and writing
+    2. read() -> reads data from file 
+    3. write() -> writes data to file 
+    4. fork() -> creates a new process
+    5. exec() -> executes a new program 
+    6. exit() -> terminates the current process
     Library functions, on the other hand, are implemented in user space and typically reside in shared libraries. They are designed to provide a higher-level abstraction over system calls,      simplifying common programming tasks and reducing the need to directly interact with the kernel. Library functions often call system calls internally to perform their operations.
-    Examples of the 
+    Examples of library functions are :
+   1. printf() -> Formats and prints data to the console.
+   2. scanf() -> Reads formatted input from the console.
+   3. malloc() -> Allocates memory from the heap.
+
+15. IN xv6, paging is used for memory management. XV6 uses 32 bit VA, so memory size of 4KB is maintained and a 2 level page table is used.Paging helps in non-contiguous memory allocation, by dividing memory into frames and programs into pages of equal sizes.
+
+16. Three shell commands are:
+   1. ls - shows files in a directory
+   2. echo - prints on shell
+   3. grep - find some text in file
+
+17. In xv6, the process synchronisation occurs with the help of locks. It is essential to have a process synchronization mechanism so that memory consistency can be maintained by avoiding race conditions etc, and to avoid deadlock conditions. 
+
+18. When an interrupt occurs, the processor execution of current program is stopped and an interrupt handler begins execution. This handler is responsible for dealing and resolving the interrupt. Once this is over, the program again starts (if it has not been terminated). Its register values are saved at the time of interrupt, so that these can be restored at this instant.
+
+19. xv6 has no implementation of a virtual memory.
+    
+20. The various steps involved in the boot process of xv6 are :
+    1. Power On: The computer's power supply provides electricity to the various components, including the CPU, memory, and storage devices.
+    2. BIOS Initialization: The BIOS performs hardware initialization, including checking for connected devices and setting up basic system parameters.
+    3. Boot Loader Execution: The boot loader locates the XV6 kernel image on the hard drive and loads it into memory.
+    4. Kernel Initialization: The kernel sets up memory management, initializes hardware devices, and creates the initial process structures.
+    5.  Initial Process Execution: The init program initializes the file system, mounts the root disk, and starts the first shell process.
+    6.  User Mode Operation: Once the shell process is running, the system enters user mode, allowing users to interact with the system and run applications.
