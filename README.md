@@ -163,9 +163,9 @@ Please write your answers here
 15. IN xv6, paging is used for memory management. XV6 uses 32 bit VA, so memory size of 4KB is maintained and a 2 level page table is used.Paging helps in non-contiguous memory allocation, by dividing memory into frames and programs into pages of equal sizes.
 
 16. Three shell commands are:
-   1. ls - shows files in a directory
-   2. echo - prints on shell
-   3. grep - find some text in file
+      1. ls - shows files in a directory
+      2. echo - prints on shell
+      3. grep - find some text in file
 
 17. In xv6, the process synchronisation occurs with the help of locks. It is essential to have a process synchronization mechanism so that memory consistency can be maintained by avoiding race conditions etc, and to avoid deadlock conditions. 
 
@@ -174,9 +174,9 @@ Please write your answers here
 19. xv6 has no implementation of a virtual memory.
     
 20. The various steps involved in the boot process of xv6 are :
-    1. Power On: The computer's power supply provides electricity to the various components, including the CPU, memory, and storage devices.
-    2. BIOS Initialization: The BIOS performs hardware initialization, including checking for connected devices and setting up basic system parameters.
-    3. Boot Loader Execution: The boot loader locates the XV6 kernel image on the hard drive and loads it into memory.
-    4. Kernel Initialization: The kernel sets up memory management, initializes hardware devices, and creates the initial process structures.
-    5.  Initial Process Execution: The init program initializes the file system, mounts the root disk, and starts the first shell process.
-    6.  User Mode Operation: Once the shell process is running, the system enters user mode, allowing users to interact with the system and run applications.
+       1. Power On: The computer's power supply provides electricity to the various components, including the CPU, memory, and storage devices.
+       2. BIOS Initialization: The BIOS performs hardware initialization, including checking for connected devices and setting up basic system parameters.
+       3. Boot Loader Execution: The boot loader locates the XV6 kernel image on the hard drive and loads it into memory.
+       4. Kernel Initialization: The kernel sets up memory management, initializes hardware devices, and creates the initial process structures.
+       5.  Initial Process Execution: The init program initializes the file system, mounts the root disk, and starts the first shell process.
+       6.  User Mode Operation: Once the shell process is running, the system enters user mode, allowing users to interact with the system and run applications.
